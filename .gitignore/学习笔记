@@ -8,3 +8,4 @@ df.shape#查看数据结构
 pd.read_csv('ex1.csv',index_col='message')#制定message列为索引列
 df.describe()#描述信息内容
 如果想要读取excel，需要pip install xlrd
+df.to_csv('df1.csv')#将df保存为df1的csv文件

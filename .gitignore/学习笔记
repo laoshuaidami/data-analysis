@@ -1,0 +1,9 @@
+假设由数据ex1.csv
+import pandas as pd
+df = pd.read_csv('ex1.csv')#读取数据
+df = pd.read_csv('ex1.csv'，header=None)#读取数据,表头为空
+df = pd.read_table('ex1.csv'，sep=',')#也可以读取数据，但是必须指定分隔符为，即sep=','
+df.info()#查看数据详细信息
+df.shape#查看数据结构
+pd.read_csv('ex1.csv',index_col='message')#制定message列为索引列
+df.describe()#描述信息内容
